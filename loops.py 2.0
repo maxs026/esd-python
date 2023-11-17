@@ -1,3 +1,5 @@
+Exo : Factoriel
+
 def calcul_factorielle():
     
     Calcule et affiche la factorielle d'un nombre N saisi par l'utilisateur.
@@ -24,3 +26,23 @@ def calcul_factorielle():
 
 # Appeler la fonction
 calcul_factorielle()
+
+
+Exo : Palindrome
+
+def est_palindrome(mot):
+
+    Vérifie si un mot est un palindrome.
+    
+    inverse = mot[:-1]  # Inverser le mot
+
+    return mot == inverse
+
+Demander à l'utilisateur de saisir un mot
+mot_utilisateur = input("Veuillez saisir un mot : ")
+
+Vérifier si le mot est un palindrome
+if est_palindrome(mot_utilisateur):
+    print(f"{mot_utilisateur} est un palindrome.")
+else:
+    print(f"{mot_utilisateur} n'est pas un palindrome.")
