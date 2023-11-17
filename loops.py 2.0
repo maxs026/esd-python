@@ -1,0 +1,26 @@
+def calcul_factorielle():
+    
+    Calcule et affiche la factorielle d'un nombre N saisi par l'utilisateur.
+    
+    try:
+        # Demander à l'utilisateur de saisir un nombre entier
+        N = int(input("Veuillez saisir un nombre entier N : "))
+        
+        Vérifier que N est positif
+        if N < 0:
+            print("Veuillez saisir un nombre entier positif.")
+            return
+
+        Calculer la factorielle de N avec une boucle
+        factorielle = 1
+        for i in range(1, N + 1):
+            factorielle *= i
+
+        Afficher le résultat
+        print(f"La factorielle de {N} est : {factorielle}")
+
+    except ValueError:
+        print("Veuillez saisir un nombre entier valide.")
+
+# Appeler la fonction
+calcul_factorielle()
