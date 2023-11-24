@@ -76,3 +76,37 @@ Affichage des informations de la personne
 print("Nom :", personne['nom'])
 print("Âge :", personne['age'])
 print("Adresse :", personne['adresse'])
+
+contacts = {}
+
+while True:
+    print("\nGestionnaire de Contacts")
+    print("1. Afficher les contacts")
+    print("2. Ajouter un contact")
+    print("3. Supprimer un contact")
+    print("4. Rechercher un contact")
+    print("5. Quitter")
+
+Gestionnaire de Contacts
+
+    choix = input("Entrez le numéro de votre choix : ")
+
+    if choix == "1":
+        print("\nListe de contacts:")
+        for nom, numero in contacts.items():
+            print(f"{nom}: {numero}")
+    elif choix == "2":
+        nom, numero = input("Nom du contact : "), input("Numéro de téléphone : ")
+        contacts[nom] = numero
+        print(f"Le contact {nom} a été ajouté avec succès.")
+    elif choix == "3":
+        nom = input("Nom du contact à supprimer : ")
+        print(f"Le contact {nom} a été supprimé avec succès." if contacts.pop(nom, None) else f"Le contact {nom} n'existe pas dans la liste.")
+    elif choix == "4":
+        nom = input("Nom du contact à rechercher : ")
+        print(f"Numéro de téléphone de {nom} : {contacts.get(nom, 'Le contact n\'existe pas.')}")
+    elif choix == "5":
+        print("Merci d'avoir utilisé le gestionnaire de contacts. Au revoir!")
+        break
+    else:
+        print("Choix invalide. Veuillez entrer un numéro valide.")
