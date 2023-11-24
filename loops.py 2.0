@@ -46,3 +46,22 @@ if est_palindrome(mot_utilisateur):
     print(f"{mot_utilisateur} est un palindrome.")
 else:
     print(f"{mot_utilisateur} n'est pas un palindrome.")
+
+
+Exo 24/11
+
+Création d'une liste initiale de nombres
+liste_nombres = [5, 2, 8, 1, 3]
+
+Ajout d'éléments à la liste
+liste_nombres.append(7)
+liste_nombres.extend([4, 6])
+
+Affichage de la liste avant le tri
+print("Liste avant le tri :", liste_nombres)
+
+Tri de la liste
+liste_nombres.sort()
+
+Affichage de la liste après le tri
+print("Liste après le tri :", liste_nombres)
