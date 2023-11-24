@@ -65,3 +65,14 @@ liste_nombres.sort()
 
 Affichage de la liste après le tri
 print("Liste après le tri :", liste_nombres)
+
+
+Exo dico :
+
+Création d'un dictionnaire représentant une personne
+personne = {'nom': 'Jean Jean','age': 70,'adresse': '123 Rue Victoire, Ville'}
+
+Affichage des informations de la personne
+print("Nom :", personne['nom'])
+print("Âge :", personne['age'])
+print("Adresse :", personne['adresse'])
